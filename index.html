@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIST Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logo-text">MIST</div>
+            <div class="logo-images">
+                <img src="download.jpg" alt="MIST Logo" class="logo-img logo-normal">
+                <img src="download.jpg" alt="MIST Logo" class="logo-img logo-rotate-90">
+                <img src="download.jpg" alt="MIST Logo" class="logo-img logo-rotate-180">
+                <img src="download.jpg" alt="MIST Logo" class="logo-img logo-rotate-270">
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn active" onclick="showPage('page1')">Home</button>
+            <button class="nav-btn" onclick="showPage('page2')">Glazing MIST</button>
+            <button class="nav-btn" onclick="showPage('page3')">About Us</button>
+        </div>
+    </div>
+
+    <!-- Page 1: Home -->
+    <div id="page1" class="page active">
+        <div class="main-content">
+            <div class="image-gallery">
+                <div class="image-card">
+                    <div class="image-text">image 1</div>
+                </div>
+                <div class="image-card">
+                    <div class="image-text">image 2</div>
+                </div>
+                <div class="image-card">
+                    <div class="image-text">image 3</div>
+                </div>
+            </div>
+
+            <div class="description-row">
+                <div class="description">Image description</div>
+                <div class="description">Image description</div>
+                <div class="description">Image description</div>
+            </div>
+
+            <div class="interactive-section">
+                <button class="click-button" onclick="toggleResponse()">click me</button>
+                <div class="response-text" id="responseText">YOU CLICKED THE BUTTON YAYYY!!!</div>
+            </div>
+
+            <div class="instruction">
+                (on clicking the button, the text on the right appears and on clicking the button again, it disappears)
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Glazing MIST -->
+    <div id="page2" class="page">
+        <div class="main-content center-content">
+            <div class="large-mist-logo">
+                <span class="mist-letter">M</span>
+                <span class="mist-letter">I</span>
+                <span class="mist-letter">S</span>
+                <span class="mist-letter">T</span>
+            </div>
+            <div class="subtitle">
+                MIST IS GREAT MIST IS AMAZING SENIORS ARE SO COOL
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: About Us -->
+    <div id="page3" class="page">
+        <div class="main-content center-content">
+            <button class="info-button" onclick="showInfo()">press me pls</button>
+            <div class="button-description">
+                clicking on this button shows your name, registration number and phone number in a JS alert
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
